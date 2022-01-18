@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Online-Shop</title>
+</head>
+<body>
+    
+        
+        <nav class="navbar navbar-expand-lg navbar-white bg-white sticky-top bg-white">
+            <div class="container-fluid px-5 mx-5">
+              <a class="navbar-brand bg-white" href="#">
+                <img class="logo" src="png-transparent-logo-phoenix-illustration-phoenix-logo-design-phoenix-illustration-free-logo-design-template-photography-orange.png" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="btn btn-outline-success m-3" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-outline-success m-3" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-outline-success m-3" id="btnswitch" onclick="switchCurrency()">Umrechnen</button>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a style="color: green;" class="btn btn-outline-success dropdown-toggle m-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Option 1</a></li>
+                      <li><a class="dropdown-item" href="#">Option 2</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Option 2</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex">
+                   <a style="color: green;"><button class="btn btn-outline-success" type="submit">
+                        <i class="bi-cart-fill  me-1"></i>
+                        </a> Cart
+                        <span id="summe" class="badge bg-success text-white ms-1 rounded-pill "></span>
+                        <span id="zusammenrechnen"></span>€
+                    </button>
+                </form>
+                <form class="d-flex m-4 p-4">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+
+
+    <main>
+        <h1 class="shine" >QueTiempo</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-5 container shadow-lg  px-lg-5 bg-body m-auto p-5 justify-content-center align-items-baseline">
+            <div class="col ">
+              <div class="card">
+                <img id="uhr" onmouseover="bildgroß()" onmouseout="bildklein()" src="patek10000059775_1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Patek Philippe Nautilus</h5>
+                  <p class="card-text">
+                    Patek Philippe Nautilus Mondphase 18kt Roségold Diamanten Automatik Armband Leder
+Gehäuse. Gehäusedurchmesser ohne Krone 40mm, Gehäusehöhe 8,3mm. Lünette 18 Karat mit 50 Diamanten besetzt. Armband Leder braun mit Ziernaht.          
+                </p>
+                <p class="price">333.333,00 €</p>
+                <span id="macbookpreis" >333333,00</span><span>€</span>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded" onclick="macbookkaufen()">Add to cart</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img id="uhr1" onmouseover="bildgroß1()" onmouseout="bildklein1()"  
+              src="m126711chnr-0002__2-modelpage_laying_down_landscape.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Rolex GMT-Master II </h5>
+                  <p class="card-text">
+                    Oyster, 40 mm, Edelstahl Oystersteel und Everose-Gold, Mechanisches Perpetual-Uhrwerk mit Selbstaufzugsmechanismus, GMT-Funktion, Kratzfestes Saphirglas, Zykloplupe zur Vergrößerung des Datums
+                    Bis 100 Meter Tiefe wasserdicht.
+                    </p>
+                    <p class="price">350.900,00 €</p>
+                    <span id="kopfhörerpreis">350900,00</span><span>€</span>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center"><a class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded" onclick="kopfhörerkaufen()">Add to cart</a></div>  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img id="uhr2" onmouseover="bildgroß2()" onmouseout="bildklein2()" src="https___chronexttime.imgix.net_V_3_V31756_V31756_1_det.png_w=1000&auto=format&fm=png&q=55&usm=50&usmrad=1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Breitling Transocean Chronograph Unitime</h5>
+                  <p class="card-text">
+                    Breitling Transocean Chronograph Unitime, Geschlecht: Herren, Größe: 46 mm, Zifferblattfarbe: Weiß, Armbandmaterial: Kautschuk, Werk: Automatik, Jahr: 2021, Zustand: Ungetragen - New
+                  </p>
+                <p class="price">25.490,00 €</p>
+                <span id="macairpreis">25490,00</span><span>€</span>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded" onclick="macairkaufen()">Add to cart</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img id="uhr3" onmouseover="bildgroß3()" onmouseout="bildklein3()"src="big-bang-sang-bleu-ii-king-gold-pave-45-mm-418.OX.1108.RX.1604.MXM20-soldier-shot.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SANG BLEU II KING GOLD PAVÉ</h5>
+                  <p class="card-text">
+                  Hublot, Meister der Fusion und Alchimist der Edelmetalle, hat einen neuen Goldfarbton entwickelt, der wärmer ist als traditionelles 18 Karat 5N Gold.  </p>
+                    <p class="price">63.500,00 €</p>
+                    <span id="tabletpreis">63500,00</span><span>€</span>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded" onclick="tabletkaufen()">Add to cart</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                  <img src="10000057831_1.jpg" id="uhr4" onmouseover="bildgroß4()" onmouseout="bildklein4()"class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Richard Mille </h5>
+                    <p class="card-text">Sony WH-H910N kabellose High-Resolution Kopfhörer (Noise Cancelling, Bluetooth, Quick Attention Modus, bis zu 40 Std. Akkulaufzeit </p>
+                        <p class="price">299,00 €</p>
+                        <span id="headsetpreis">299</span><span>€</span>
+                  </div>
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded" onclick="headsetkaufen()">Add to cart</a></div>
+                </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img id="uhr5" onmouseover="bildgroß5()" onmouseout="bildklein5()" src="17842529_37524297_1000.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Audemars Piguet</h5>
+                    <p class="card-text">Audemar Piguet's Royal Oak timepiece is a unique slice of timekeeping history. Make sure you're ready to tackle the day with help from this 2020 pre-owned Royal Oak 41mm.  </p>
+                    <p class="price">699,00 €</p>
+                    <span id="asuspreis">799</span><span>€</span>
+                  </div>
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded" onclick="asuskaufen()">Add to cart</a></div>
+                </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img id="uhr6" onmouseover="bildgroß6()" onmouseout="bildklein6()" src="17675688_37028981_1000.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Audemars Piguet</h5>
+                    <p class="card-text">
+                        Samsung Galaxy S7 Edge G935F LTE Smartphone, 5,5 Zoll (14 cm), 4G, 32 GB, 12 MP Kamera, Android, Goldfarben ,MicroSD um bis zu 200 GB
+                    </p>
+                    <p class="price">399,00 €</p>
+                    <span id="galaxypreis">399</span><span>€</span>
+                  </div>
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded" onclick="galaxykaufen()">Add to cart</a></div>
+                </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img id="uhr7" onmouseover="bildgroß7()" onmouseout="bildklein7()"src="172e56f3ccc78f09651b6dbecbb57aaf16de4123.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Piaget</h5>
+                    <p class="card-text">ASUS VivoBook S15 S513EA-BQ059T Laptop 39.6 cm (15.6 Zoll, Full HD, 1920x1080, matt) Notebook (Intel Core i5-1135G7, 8GB RAM, 512GB SSD, Intel UHD Graphics, Win10H) Star Black </p>
+                    <p class="price">599,00 €</p>
+                    <span id="laptoppreis">599</span><span>€</span>
+                  </div>
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded" onclick="laptopkaufen()">Add to cart</a></div>
+                </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img id="uhr8" onmouseover="bildgroß8()" onmouseout="bildklein8()" src="WWJE2GXSB01_ZOO00_0.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Dolce &Gabbana   </h5>
+                    <p class="card-text">Rekam ECOPOD Digitale Kamera Schwarz mit Stativ, Autofokus , manueller Fokus
+                      Phasen-AF mit 11 flächig angeordneten AF-Sensoren, CCD mit 10.2 MP, APS-C </p>
+                    <p class="price">299,00 €</p>
+                    <span id="campreis">299</span><span>€</span>
+                  </div>
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto shadow-lg p-3 rounded" onclick="camkaufen()">Add to cart</a></div>
+                </div>
+                </div>
+              </div>
+          </div>
+    </main>
+    <footer class="py-3 mt-5 bg-transparent">
+        <div class="container"><p class="shine"  style="font-size: 1.5rem;"> Copyright &copy; Magomed Elmurzaev</p></div>
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+<script src="script.js"></script>
+    
+    
+</body>
+</html>

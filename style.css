@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+    background-image: url(black-friday-2020-sale-technik-deals-schnaeppchen-aufmacherjpg.jpg);
+  }
+ 
+.price {
+    margin-top: 15px;
+    font-weight: bolder;
+  }
+
+#centerbtn{
+  text-align: center;
+  padding: 15px;
+}
+
+.card{
+  height: 650px;
+}
+
+.shine {
+  margin-bottom: 50px;
+  font-weight: bolder;
+  font-size: 80px;
+  color: rgb(223, 87, 45);
+  text-align: center;
+  animation: glow 0.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(19, 53, 223), 0 0 30px #f54e4e, 0 0 40px #f8f8f8, 0 0 50px #00e6c4, 0 0 60px #00e6b0, 0 0 90px #b83c3c;
+  }
+  to {
+    text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px #4d74ff, 0 0 40px #b61ad1, 0 0 50px #e9e5e7, 0 0 60px #f0eaed, 0 0 70px #dc2f8b, 0 0 90px #f059a5;
+  }
+}
+
+li{
+  list-style: none;
+}
+
+.logo{
+  width: 150px;
+  height: 150px;
+}
+
+img{
+  width: 150px;
+  height: 200px;
+  z-index: 1;
+}
