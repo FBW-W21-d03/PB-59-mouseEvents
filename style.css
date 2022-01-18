@@ -1,0 +1,78 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+body #header {
+  height: 90px;
+  width: 100%;
+  background-color: #013e36;
+}
+
+body #header h1 {
+  font-family: 'Neonderthaw', cursive;
+  color: #ebcd6b;
+  text-align: center;
+}
+
+body #header i {
+  color: #ebcd6b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 30px;
+}
+
+body main div {
+  display: inline-block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: row wrap;
+      flex-wrap: row wrap;
+}
+
+body main .card, body main .col, body main div {
+  background-color: #f1e7c5;
+}
+
+body main p {
+  color: red;
+}
+
+body main .card-img-top {
+  width: 400px;
+  height: 300px;
+  padding: 5rem;
+  margin: 5rem;
+}
+
+body main .card-img-top img {
+  width: 100px;
+  height: 100px;
+}
+
+body footer ul li {
+  text-align: center;
+  color: #ebcd6b;
+}
+
+body footer div {
+  background-color: #013e36;
+  height: 70px;
+  width: 100%;
+}
+
+body footer div h3 {
+  text-align: center;
+  color: #ebcd6b;
+}
+
+body footer div #mine {
+  text-align: right;
+}
+/*# sourceMappingURL=style.css.map */
