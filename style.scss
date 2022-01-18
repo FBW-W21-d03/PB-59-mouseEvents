@@ -1,0 +1,132 @@
+$borde :7px;
+$colos :rgb(77, 21, 151);
+$color :blue;
+$fontfamily:'Oswald',
+sans-serif;
+
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 40px;
+
+}
+
+body {
+  background-image: url(backgroung.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+
+}
+
+.div1 {
+  background-image: url(img/img1.jpg);
+  background-size: 50%;
+  background-size: cover;
+  border: $borde solid $colos;
+  animation-name: div1;
+  animation-duration: 4s;
+  animation-delay: 1s;
+
+}
+
+.div2 {
+
+  background-image: url(img/img6.jpeg);
+  background-size: 50%;
+  background-size: cover;
+  border: $borde solid $colos;
+  animation-name: div2;
+  animation-duration: 4s;
+  right: 0;
+  animation-delay: 1s;
+}
+
+.div3 {
+
+
+  background-image: url(img/img8.jpg);
+  background-size: 50%;
+  background-size: cover;
+  border: $borde solid $colos;
+  animation-name: div3;
+  animation-duration: 4s;
+  bottom: 0px;
+  right: 0px;
+  animation-delay: 1s;
+}
+
+.div4 {
+  background-image: url(img/img4.jpg);
+  background-size: 50%;
+  background-size: cover;
+  border: $borde solid $colos;
+  animation-name: div4;
+  animation-duration: 4s;
+  bottom: 0px;
+  animation-delay: 1s;
+}
+
+main {
+  width: 414px;
+  height: 414px;
+  position: relative;
+  border: $borde solid $colos;
+  background-image: url(img/img10.jpg);
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  animation-iteration-count: infinite;
+}
+
+h1 {
+  position: absolute;
+  text-align: center;
+  width: 400px;
+  margin: 0px;
+  line-height: 400px;
+  font-size: 3rem;
+  color: blueviolet;
+  text-shadow: 4px 4px 8px rgb(241, 202, 72)
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a:hover {
+  font-size: 60px;
+  color: green;
+}
+
+@keyframes div1 {
+  to {
+    transform: translate(-200px) rotate(180deg);
+  }
+}
+
+@keyframes div2 {
+  to {
+    transform: translate(200px) rotate(180deg);
+  }
+}
+
+@keyframes div3 {
+  to {
+    transform: translate(200px) rotate(180deg);
+  }
+}
+
+@keyframes div4 {
+  to {
+    transform: translate(-200px) rotate(180deg);
+  }
+}

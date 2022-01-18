@@ -1,0 +1,79 @@
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 40px;
+}
+
+body {
+  background-color: #faf6ec;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.card {
+  margin-top: 40px;
+  background-color: rgba(229, 231, 236, 0.856);
+}
+
+h1::before {
+  content: "* * *";
+  color: gold;
+  font-size: 3rem;
+}
+
+h1::after {
+  content: "* * *";
+  color: gold;
+  font-size: 3rem;
+}
+
+h1 {
+  color: gold;
+  justify-items: center;
+  font-family: 'Libre Baskerville', serif;
+  text-shadow: 6px 6px 8px orangered;
+}
+
+.card-title {
+  font-family: 'Libre Baskerville', serif;
+  text-shadow: 4px 4px 6px #464343;
+}
+
+.card-text {
+  font-family: 'Oswald', sans-serif;
+}
+
+a:hover {
+  font-size: 20px;
+  color: green;
+}
+
+a {
+  -webkit-box-shadow: #a3bdf7 5px 5px 5px;
+          box-shadow: #a3bdf7 5px 5px 5px;
+}
+
+@media (max-width: 640px) {
+  body {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+        grid-template-areas: "header" "main" "footer";
+  }
+}
+/*# sourceMappingURL=style1.css.map */
