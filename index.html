@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="naHeader" class=" fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar scroll</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Link
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Link</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- start vid  -->
+        <div id="vid" class="container m-0 ">
+            <video id="vidd" autoplay loop muted>
+                <source id="viddd" src="./Zegarek Zinvo Blade Onyx _ Zegarownia.pl.webm">
+            </video>
+        </div>
+        <!-- end vid -->
+
+        <h1 id="que">QueTiempo</h1>
+        <!-- cards start  -->
+
+        <!-- summe  -->
+        <div>
+            <p class="totalPrice">Total Price</p>
+            <ul id="ulSumme">
+
+            </ul>
+        <span class="ms-5"> Total = </span> <span id="total11" class="ms-5">0  </span><span> €</span>
+        </div>
+        <!-- summe ende -->
+        <div id="divAllwatch" class="container">
+
+            <section>
+
+
+
+                <div id="wa1" class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img id="img1w" src="./zinvo-1.jpg" class="card-img-top" alt="clock"
+                                onmouseover="insidePic1()" onmouseout="outsidePic1() ">
+                            <div class="card-body">
+                                <h5 class="card-title">Zinvo</h5>
+                                <p class="card-text"><span id="price1"> 299.0 </span><span> €</span></p>
+                                <button id="clock1" onclick="clickMe1()" type="button"
+                                    class="btn btn-primary btn-lg">buy Now</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img id="img2w" src="./zinvo-2.jpg" class="card-img-top" alt="clock"
+                                onmouseover="insidePic2()" onmouseout="outsidePic2() ">
+                            <div id="cardbody" class="card-body">
+                                <h5 class="card-title">Zinvo</h5>
+                                <p class="card-text"><span id="price2"> 350.0 </span><span> €</span></p>
+                                <button id="clock2" onclick="clickMe2()" type="button"
+                                    class="btn btn-primary btn-lg">watch me.</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img id="img3w" src="./zinvo-3.jpg" class="card-img-top" alt="clock"
+                                onmouseover="insidePic3()" onmouseout="outsidePic3() ">
+                            <div class="card-body">
+                                <h5 class="card-title">Zinvo</h5>
+                                <p class="card-text">750.0€</p>
+                                <button id="clock3" onclick="clickMe3()" type="button"
+                                    class="btn btn-primary btn-lg">watch me.</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./zinvo-4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Zinvo</h5>
+                                <p class="card-text"> 250.0€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./zinvo-5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Zinvo</h5>
+                                <p class="card-text">549.0 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./zinvo-9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Zinvo</h5>
+                                <p class="card-text">630.0€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./zinvo-8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Zinvo</h5>
+                                <p class="card-text">550.0 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./zinvo-10.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Zinvo</h5>
+                                <p class="card-text">365.0€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="watch2 mt-2">
+                    <div class="col">
+                        <div class="card w-50">
+                            <img src="./zinvo-7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Zinvo</h5>
+                                <p class="card-text">470.0€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card w-50">
+                            <img src="./zinvo-11.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Zinvo</h5>
+                                <p class="card-text">320.0€</p>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        </section>
+
+        </section>
+        </div>
+
+
+        <!-- cards end  -->
+
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
