@@ -1,7 +1,6 @@
-
-function kaufen(){
+function kaufen() {
   console.log("In Warenkorb");
-  alert("In Warenkorb")
+  alert("In Warenkorb");
 }
 
 //UHR 1
@@ -62,7 +61,7 @@ function watchOut7() {
 
 //UHR 8
 function watchIn8() {
-  document.getElementById("ro8").src = "./images/rol18.webp";
+  document.getElementById("rol8").src = "./images/rol18.webp";
 }
 function watchOut8() {
   document.getElementById("rol8").src = "./images/rol17.webp";
