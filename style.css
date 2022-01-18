@@ -1,0 +1,63 @@
+
+  
+ 
+body{
+   background-color: rgb(235, 141, 65);
+    background-size: cover;
+    font-family: sans-serif;
+    
+} 
+
+ .shop-name{
+    font-size: 90px;
+    padding-top:10rem;
+    text-align: center;
+    font-weight:950;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:10px 10px 10px #94490b;
+}
+
+.btn-info:hover{
+    background-color: rgb(15, 121, 221);
+}
+
+.gesamtsumme{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.gesamt{
+    margin-left: 2rem;
+}
+
+#list{
+    color:black;
+    font-weight:600;
+}
+
+
+#contact{
+    text-align: center;
+    margin-top: 2rem;
+    font-weight:500;
+    color: black;
+   
+}
+
+#list-unstyled, a {
+    color: black;
+}
+.nav{
+    font-size: 1.5rem;
+}
+
+.nav-link{
+    color: black;
+}
+#copyright{
+    text-align:center ;
+    margin: 2rem;
+}

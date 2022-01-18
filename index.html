@@ -1,0 +1,250 @@
+
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- Icon link -->
+<script src="https://kit.fontawesome.com/7ad11a1981.js" crossorigin="anonymous"></script>
+<!-- Css link -->
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Online Shop</title>
+</head>
+<hr>
+    <header>
+      <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary px-4 fixed-top">
+            <div class="container-fluid">
+                <img src="./images/download.png" alt="logo" width="60px " height="50px">
+              <a class="navbar-brand  text-light px-4 fs-4" href="#product">Product</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active  text-light px-4 fs-4 " aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active  text-light px-4 fs-4 " href="#">basket <i class="fas fa-shopping-basket"></i></a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-3 fs-4" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success bg-light text-dark"  type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div id="header-image">
+              <h1 class="shop-name"><span>Que Tiempo </span> </h1>
+          </div>
+    </header>
+         <!-- PRODUCT ERSTE REIHE -->
+    <main>
+        <article>
+            <section >
+              <div class="row row-cols-1 row-cols-md-3 g-4 my-3 mx-3 ">
+                <div class="col">
+                  <div class="card h-100  ">
+                    <img id="product_1" onmouseover="zoomIn1()"  onmouseout="zoomOut1()" src="./images/shopping.webp" class="card-img-top" alt="...">
+                    <div class="card-body  text-center">
+                      <h5 class="card-title fw-bolder  fs-3">	Holzkern Holzuhr Parhelion Zebrano/Gold Herrenuhr Armbanduhr</h5>
+                      <p class="card-text">Parhelion (Zebrano/Gold) Bei der Haloerscheinung Parhelion hat der Beobachter den Eindruck, dass sich neben unserer Sonne eine zweite, schwächere befindet. Mit fein gebürstetem</p>
+                        <span id="preis1" class="card-title">179</span>
+                        <span id="geld-zeichnen1">€</span> <br> 
+                      <button onclick="kaufen1()" value="show alert box" class="btn btn-info">Buy now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 bg-light">
+                    <img  id="product_2" onmouseover="zoomIn2()"  onmouseout="zoomOut2()"  src="./images/shopping _4.webp" class="card-img-top" alt="...">
+                    <div class="card-body  text-center">
+                      <h5 class="card-title  fw-bolder  fs-3">Cobalt (Walnuss/Blau)</h5>
+                      <p class="card-text ">HOLZKERN Kay Leadwood Marmor Durch ein einzigartiges Wechselspiel aus dunklem Leadwood, grauem Marmor und intensivem blauem Edelstahl repräsentiert unser Modell Kay den treuen Begleiter von König Artus, welchem magische Eigenschaften und Kräfte zugeschrieben wurden. </p>
+                      <span  id="preis2" class="card-title">399</span>
+                      <span id="geld-zeichnen2">€</span><br>
+                      <button  onclick="kaufen2()" class="btn btn-info">Buy now</button>
+                    </div>                 
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 ">
+                    <img  id="product_3" onmouseover="zoomIn3()"  onmouseout="zoomOut3()" src="./images/download_*3.webp" class="card-img-top" alt="...">
+                    <div class="card-body  text-center">
+                      <h5  class="card-title fw-bolder  fs-3 ">Armbanduhr Gehäusedurchmesser 45 mm</h5>
+                      <p class="card-text">Schwarzes Zifferblatt mit goldfarbenen OberflächenArmband aus Olivenholz und Ebenholz
+                       Gehäusedurchmesser: 45 mm
+                       Verstellbares Armband 21–24 mm
+                       Japanisches Uhrwerk JR20
+                       Gehäuseboden aus Stahl
+                       IPB-Stahlschließe
+                       Spritzwassergeschützt</p>
+                      <span  id="preis3" class="card-title">215</span>
+                      <span  id="geld-zeichnen3">€</span><br>
+                      <button onclick="kaufen3()" class="btn btn-info">Buy now</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- PRODUCT ZWEITE REIHE -->
+
+            <section id="product">
+              <div class="row row-cols-1 row-cols-md-3 g-4 my-3 mx-3">
+                <div class="col">
+                  <div class="card h-100 ">
+                    <img id="product_4" onmouseover="zoomIn4()"  onmouseout="zoomOut4()"  src="./images/shopping _*4.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title fw-bolder  fs-3">Amelia (Marmorholz/Leadwood)</h5>
+                      <p class="card-text">Als entschlossene Förderin der ägyptischen Archäologie, gründete Amelia Edwards im Jahr 1882 den Egypt Exploration Fund und setzte sich damit noch weiter für den Ausbau der Forschung ein.</p>
+                      <span  id="preis4" class="card-title">119</span>
+                      <span id="geld-zeichnen4">€</span><br>
+                      <button onclick="kaufen4()" class="btn btn-info">Buy now</button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 ">
+                    <img  id="product_5" onmouseover="zoomIn5()"  onmouseout="zoomOut5()"  src="./images/shopping _*5.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title fw-bolder  fs-3">	Holzkern Holzuhr Chicago Walnuss/Marmor Herrenuhr Armbanduhr</h5>
+                      <p class="card-text">Mit über 400 Wolkenkratzern beherbergt Chicago nach New York City die zweitmeisten Hochhäuser der USA. Angetrieben von berühmten Architekten entstand so seit dem späten 19 </p>
+                      <span   id="preis5" class="card-title">399</span>
+                      <span  id="geld-zeichnen5">€</span><br>
+                      <button onclick="kaufen5()" class="btn btn-info">Buy now</button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img  id="product_6" onmouseover="zoomIn6()" onmouseout="zoomOut6()" src="./images/shopping_5.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title fw-bolder  fs-3">Holzkern; Holzuhr Calama (Walnuss/Zebrano), Herren, Naturholz</h5>
+                      <p class="card-text">Die Wüstenstadt Calama ist einer der trockensten Orte dieser Erde und liegt inmitten der Atacama Wüste. Nachts wird die Wüste dafür zum Schauplatz eines der klarsten Sternenhimmels der südlichen Erdhalbkugel.  </p>
+                      <span id="preis6" class="card-title">319</span>
+                      <span  id="geld-zeichnen6">€</span><br>
+                      <button onclick="kaufen6()" class="btn btn-info">Buy now</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+        <!-- PRODUCT DRITTE REIHE -->
+            <section>
+              <div class="row row-cols-1 row-cols-md-3 g-4 my-3 mx-3">
+                <div class="col">
+                  <div class="card h-100 ">
+                    <img id="product_7" onmouseover="zoomIn7()"  onmouseout="zoomOut7()" src="./images/shopping_6.webp" class="card-img-top" alt="...">
+                    <div class="card-body  text-center">
+                      <h5 class="card-title fw-bolder  fs-3">Kay (Leadwood/Marmor)</h5>
+                      <p class="card-text">Durch ein einzigartiges Wechselspiel aus dunklem Leadwood, grauem Marmor und intensivem blauem Edelstahl repräsentiert unser Modell Kay den treuen Begleiter von König Artus, welchem magische Eigenschaften und Kräfte zugeschrieben wurden.</p>
+                      <span  id="preis7" class="card-title">299.99</span>
+                      <span id="geld-zeichnen7">€</span><br>
+                      <button onclick="kaufen7()" class="btn btn-info">Buy now</button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 ">
+                    <img id="product_8" onmouseover="zoomIn8()"  onmouseout="zoomOut8()" src="./images/shopping_7.webp" class="card-img-top" alt="...">
+                    <div class="card-body  text-center">
+                      <h5 class="card-title fw-bolder  fs-3">Lucan (Ahorn/Marmor)</h5>
+                      <p class="card-text">In unserem tiefschwarzen Chronographen aus Ahornholz, Edelstahl und Marmor sorgen weiße Mineraladern und silberne Zeiger für aufregende Kontraste und würdigen Sir Lucan für seine Treue und Ehrenhaftigkeit.</p>
+                        <span  id="preis8" class="card-title">299.90</span>
+                      <span id="geld-zeichnen8">€</span><br>
+                      <button onclick="kaufen8()" class="btn btn-info">Buy now</button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 ">
+                    <img id="product_9" onmouseover="zoomIn9()"  onmouseout="zoomOut9()" src="images/shopping _8.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title fw-bolder  fs-3">Bob (Koa/Marmor)</h5>
+                      <p class="card-text">Gehäuse: Durchmesser 40mm, gefertigt aus Koa und Edelstahl in Antiksilber
+                      Zifferblatt: Echter, grüner Marmor
+                      Uhrwerk: Quarzuhrwerk der Firma Citizen
+                      Armband: Größenverstellbares Armband aus Koa und Edelstahl in Antiksilber (passt auf jedes Handgelenk)</p>
+                        <span id="preis9" class="card-title">198</span>
+                      <span id="geld-zeichnen9">€</span><br>
+                      <button onclick="kaufen9()" class="btn btn-info">Buy now</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </article>
+    </main>
+              <!-- FOOTER -->
+          <h3 id="contact">Contact Us</h3>
+          <hr>
+         <footer class="footer  my-5 ">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-5">
+                      <h5><i class="fa fa-road"></i>Que Tiempo GMBH</h5>
+                      <div class="row">
+                          <div class="col-6 ">
+                              <ul class="list-unstyled ">
+                                  <li><a href="">Product</a></li>
+                                  <li><a href="">Benefits</a></li>
+                                  <li><a href="">Partners</a></li>
+                                  <li><a href="">Team</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-6">
+                              <ul class="list-unstyled">
+                                  <li><a href="">Documentation</a></li>
+                                  <li><a href="">Support</a></li>
+                                  <li><a href="">Legal Terms</a></li>
+                                  <li><a href="">About</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <ul class="nav ">
+                          <li class="nav-item "><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+                          <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+                          <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
+                          <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
+                      </ul>
+                      <br>
+                  </div>
+                  <div class="col-md-5">
+                      <form>
+                          <fieldset class="form-group my-3  ">
+                              <input type="email" class="form-control " id="exampleInputEmail1" placeholder="Enter email">
+                          </fieldset>
+                          <fieldset class="form-group">
+                              <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                          </fieldset>
+                          <fieldset class="form-group text-xs-right">
+                              <button type="button" class="btn btn-secondary-outline btn-lg  btn btn-info my-3">Send</button>
+                          </fieldset>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <p id="copyright"> <i class="far fa-registered"></i>2021 All Rights Reserved By Electro Shop GmbH</p>
+      </footer>
+
+     
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>
+</html>
