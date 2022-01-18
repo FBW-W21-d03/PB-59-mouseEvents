@@ -114,7 +114,7 @@ function zahlVonText(text) {
  
 function macbookkaufen() {
   document.getElementById("summe").innerHTML =
-  document.getElementById("summe").innerHTML + "<li>" + "Macbook Pro - 1299.00 €" + "</li>";
+  document.getElementById("summe").innerHTML + "<li>" + "Patek Philippe Nautilus - 333.333,00 €" + "</li>";
   document.getElementById("list").innerHTML =
   document.getElementById("list").innerHTML + "<li>" + "Macbook Pro - 1299.00 €" + "</li>";
 
