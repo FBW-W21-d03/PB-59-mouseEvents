@@ -1,0 +1,52 @@
+body{
+    background-image: url(./texture-g9d55a206d_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#bgserdar{
+    background-image: url(./old-6880626_960_720.webp);
+    background-size: cover;
+    height: 500px;
+    border-radius: 10px;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding-left: 120px;
+    text-shadow: 2px 2px 5px black;
+    
+}
+
+.card{
+    border: 2px solid rgb(173, 132, 54);
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    height: 200px;
+}
+
+p{
+    font-weight: bold;
+}
+
+button{
+    height: 30px;
+    width: 70px;
+    margin-left: 30px;
+    background: rgb(255, 209, 57);
+    font-size: larger;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+img{
+    height: 150px;
+}
+
+span{
+    font-size: x-large;
+    font-weight: bold;
+}
