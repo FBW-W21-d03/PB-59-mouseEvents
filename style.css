@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Luxurious Roman', cursive;
+    background-color: rgb(27, 25, 51);
+    color: burlywood;
+}
+body{   
+    display: grid;
+    justify-content: center;
+    
+}
+main{
+    display: inline-block;
+    justify-items: center;
+    align-items: center;
+}
+#fraktal{
+    height: 20rem;
+    width: 100vw;
+}
+h1{
+    text-align: center;
+    padding: 2rem;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.contCont{
+
+
+    padding: 2rem;
+    border: 1px solid green;
+    margin: 1rem;
+}
+.img-thumbnail{
+    display: inline-block;
+    width: 10vw;
+}
+.txtCont{
+    padding: 1rem;
+    width: 40vw;
+}
+p{
+    width: 10rem;
+}
