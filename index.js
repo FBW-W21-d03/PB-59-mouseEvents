@@ -125,4 +125,58 @@ function newFunction(){
 }
 function newFunctionout(){
     document.getElementById("buy").style.backgroundColor="gold";
+};
+function newFunction9(){
+    document.getElementById("buyFunction8").style.backgroundColor="red";
 }
+function newFunctionout9(){
+    document.getElementById("buyFunction8").style.backgroundColor="gold";
+};
+function newFunction8(){
+    document.getElementById("opt").style.backgroundColor="red";
+}
+function newFunctionout8(){
+    document.getElementById("opt").style.backgroundColor="gold";
+};
+function newFunction7(){
+    document.getElementById("sapte").style.backgroundColor="red";
+}
+function newFunctionout7(){
+    document.getElementById("sapte").style.backgroundColor="gold";
+};
+function newFunction6(){
+    document.getElementById("sase").style.backgroundColor="red";
+}
+function newFunctionout6(){
+    document.getElementById("sase").style.backgroundColor="gold";
+};
+function newFunction5(){
+    document.getElementById("cinci").style.backgroundColor="red";
+}
+function newFunctionout5(){
+    document.getElementById("cinci").style.backgroundColor="gold";
+};
+function newFunction4(){
+    document.getElementById("patru").style.backgroundColor="red";
+}
+function newFunctionout4(){
+    document.getElementById("patru").style.backgroundColor="gold";
+};
+function newFunction(){
+    document.getElementById3("trei").style.backgroundColor="red";
+}
+function newFunctionout3(){
+    document.getElementById("trei").style.backgroundColor="gold";
+};
+function newFunction2(){
+    document.getElementById("secondhov").style.backgroundColor="red";
+}
+function newFunctionout2(){
+    document.getElementById("secondhov").style.backgroundColor="gold";
+};
+function newFunction11(){
+    document.getElementById("firsthov").style.backgroundColor="red";
+}
+function newFunctionout11(){
+    document.getElementById("firsthov").style.backgroundColor="gold";
+};
