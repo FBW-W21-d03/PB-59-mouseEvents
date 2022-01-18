@@ -1,7 +1,7 @@
 
 body{
-   
-    padding: 0px;
+       background-color:rgb(231, 223, 203);
+       padding: 0px;
     margin: 0px;
     #header{
         height: 90px;
@@ -21,6 +21,11 @@ body{
         }
     }
     main{
+        #maindiv{
+            height: 100%;
+            width:70%;
+            margin-left: 20rem;
+        }
         div{
             display: inline-block;
             flex-direction: row;
