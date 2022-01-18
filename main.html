@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Luxury Watch</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+</head>
+<header>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Luxury Watch</h1>      
+    <p>Luxus Uhren für jeden Anlass </p>
+  </div>
+</div>
+</header>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="luxury-watch-logo-template-3105673.jpg">Logo</a>
+    </div>
+    
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">PATEK PHILIPPE</div>
+        <img
+        id="patek"
+        onmouseover="zoomIn()"
+        onmouseout="zoomOut()"
+        src="637048890390386935-Patek-Philippe-59801AR-001-340927.jpg"
+        alt=""
+        style="width: 100px"
+      />
+        <div class="panel-footer">Nautilus Herren - 5980/1AR 40,5 mm, Edelstahl/18k Roségold, Automatik-Manufakturkaliber CH 28-520 C mit Chronographenfunktion | Referenz-Nr. PP410004 </div>
+        <div class="panel-footer">60.704 € inkl. MwSt. </div>
+        <button onclick="kaufen()">Kaufen</button>
+      </div>
+      
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">HUBLOT BIG BANG INTEGRAL TITANIUM </div>
+        <img
+        id="hublot"
+        onmouseover="zoomIn1()"
+        onmouseout="zoomOut1()"
+        src="HUBLOT-BIG-BANG-INTEGRAL-TITANIUM-PAVÉ-451.NX_.1170.NX_.jpg"
+        alt=""
+        style="width: 100px"
+      />
+        <div class="panel-footer">Automatik, Durchmesser 42mm, Wasserdicht bis 10 Bar, Saphirglas</div>
+        <div class="panel-footer">20.700 € inkl. MwSt. </div>
+        <button onclick="kaufen()">Kaufen</button>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Audemars Piguet Royal Oak Selfwinding</div>
+       <img
+        id="audemars"
+        onmouseover="zoomIn2()"
+        onmouseout="zoomOut2()"
+        src="20457281-c1m76x5ft9pv0l7abw3yz8c7-Large.webp"
+        alt=""
+        style="width: 100px"
+      />
+        <div class="panel-footer">Audemars Piguet / Royal Oak / 15450ST.OO.1256ST.03 / V16736</div>
+        <div class="panel-footer">65.600 € inkl. MwSt. </div>
+        <button onclick="kaufen()">Kaufen</button>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">A. Lange & Söhne 1815 Annual Calendar</div>
+       <img
+        id="lange"
+        onmouseover="zoomIn3()"
+        onmouseout="zoomOut3()"
+        src="a-lange-38-sohne-238-026e_image-01_1.jpg"
+        alt=""
+        style="width: 100px"
+      />
+        <div class="panel-footer">A. Lange & Söhne / 1815 / 238.032 / V14936</div>
+        <div class="panel-footer">38.370 € inkl. MwSt. </div>
+        <button onclick="kaufen()">Kaufen</button>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Rolex Cosmograph Daytona Zenith R8</div>
+       <img
+        id="rolex"
+        onmouseover="zoomIn4()"
+        onmouseout="zoomOut4()"
+        src="V31680_1.avif"
+        alt=""
+        style="width: 100px"
+      />
+        <div class="panel-footer">Rolex / Cosmograph Daytona / 16528 / V31680</div>
+        <div class="panel-footer">94.590 € inkl. MwSt. </div>
+        <button onclick="kaufen()">Kaufen</button>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Richard Mille Automatic Winding Split-seconds Chronograph</div>
+         <img
+        id="mille"
+        onmouseover="zoomIn5()"
+        onmouseout="zoomOut5()"
+        src="21604568-61q8lnpg4yfu9qks60m4v95h-Large.jpg"
+        alt=""
+        style="width: 100px"
+      />
+        <div class="panel-footer">Gehäuse: Carbon TPT (abgebildet) oder Gold und Carbon TPT</div>
+        <div class="panel-footer">604.444 € inkl. MwSt. </div>
+        <button onclick="kaufen()">Kaufen</button>
+        
+      </div>
+    </div>
+    </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>  
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Addresse">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+</footer>
+ <script src="./java.js"></script>
+</body>
+</html>
