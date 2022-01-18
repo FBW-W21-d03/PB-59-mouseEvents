@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=Lobster&display=swap");
+html {
+  font-family: "Festive", cursive;
+  font-family: "Lobster", cursive;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.rol {
+  width: 30rem;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  border-radius: 2%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.preis {
+  display: flex;
+  gap: 25rem;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid #b4b6b446;
+}
+
+button:hover {
+  background-color: rgba(128, 128, 128, 0.493);
+}
+#logo {
+  width: 150px;
+}
