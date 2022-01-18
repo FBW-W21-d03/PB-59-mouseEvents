@@ -51,6 +51,12 @@ body main p {
   color: red;
 }
 
+body main .card-title {
+  color: #313dee;
+  font-family: 'Neonderthaw', cursive;
+  font-size: 29px;
+}
+
 body main .card-img-top {
   width: 400px;
   height: 300px;
