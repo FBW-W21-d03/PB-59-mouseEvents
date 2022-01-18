@@ -7,42 +7,59 @@
 }
 body{   
     display: grid;
-    justify-content: center;
-    
-}
-main{
-    display: inline-block;
-    justify-items: center;
-    align-items: center;
+    justify-content: center;   
 }
 #fraktal{
     height: 20rem;
-    width: 100vw;
+    width: 100%;
 }
 h1{
     text-align: center;
     padding: 2rem;
 }
+main{
+    display: inline-block;
+    justify-items: center;
+
+}
+
 section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
-}
+    justify-items: center;
+} 
 .contCont{
-
-
     padding: 2rem;
     border: 1px solid green;
     margin: 1rem;
 }
 .img-thumbnail{
     display: inline-block;
-    width: 10vw;
+
+z-index: 0;
+}
+.img-thumbnail:hover{
+    position: absolute;
+    z-index: 2;
+}
+h4{
+    margin-bottom: 3rem;
+
+    font-size: 1.8rem;
 }
 .txtCont{
     padding: 1rem;
-    width: 40vw;
+
 }
 p{
     width: 10rem;
+    margin-bottom: 4rem;
+}
+button{
+    width: 9rem;
+    height: 3rem;
+    background-color: rgba(10, 45, 163, 0.486);
+    font-size: 1rem;
+    color: rgba(228, 155, 59, 0.808);
+    font-family: sans-serif;
 }
