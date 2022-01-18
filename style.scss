@@ -47,10 +47,11 @@ main {
   figure {
     border: 5px solid silver;
     border-radius: 1rem;
+    position: relative;
     img {
       padding: 1rem;
       width: 100%;
-      object-fit: cover;
+      position: relative;
     }
     figcaption {
       padding: 0.618rem;

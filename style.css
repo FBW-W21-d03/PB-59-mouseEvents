@@ -63,13 +63,13 @@ main {
 main figure {
   border: 5px solid silver;
   border-radius: 1rem;
+  position: relative;
 }
 
 main figure img {
   padding: 1rem;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  position: relative;
 }
 
 main figure figcaption {
