@@ -1,0 +1,67 @@
+body {
+  nav {
+    width: 70vw;
+    padding: 0.1rem;
+    margin: 1rem auto;
+    background-color: #ff1;
+    border-radius: 5px;
+
+    #logo-img {
+      width: 75px;
+      position: absolute;
+      margin: 0.5rem;
+      border-radius: 50%;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+        font-size: 1.5em;
+        padding: 1rem;
+        list-style: none;
+
+        a {
+          font-weight: bold;
+          text-decoration: none;
+          color: blue;
+        }
+      }
+    }
+  }
+
+  .cartbasket {
+    width: 13%;
+    float: right;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 5rem;
+    justify-content: space-evenly;
+    //position: relative;
+
+    .card {
+      width: 100px;
+      border-radius: 5px;
+    }
+    //.card:hover {
+    //width: 500px;
+    //position: absolute;
+    //}
+
+    div {
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
+
+  footer {
+    margin: 2rem;
+    text-align: center;
+  }
+}

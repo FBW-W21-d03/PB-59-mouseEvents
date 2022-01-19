@@ -1,0 +1,68 @@
+body nav {
+  width: 70vw;
+  padding: 0.1rem;
+  margin: 1rem auto;
+  background-color: #ff1;
+  border-radius: 5px;
+}
+
+body nav #logo-img {
+  width: 75px;
+  position: absolute;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+
+body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body nav ul li {
+  font-size: 1.5em;
+  padding: 1rem;
+  list-style: none;
+}
+
+body nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: blue;
+}
+
+body .cartbasket {
+  width: 13%;
+  float: right;
+}
+
+body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  margin: 5rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body section .card {
+  width: 100px;
+  border-radius: 5px;
+}
+
+body section div img {
+  border-radius: 5px;
+}
+
+body footer {
+  margin: 2rem;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

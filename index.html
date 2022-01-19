@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"
+        integrity="sha512-fAw3hLoeRiu86io4KGdDLz/Ed3OiNUMBXamPPmpqswqqJaU2YzbEBbvvr3/OyGPyMl1ZyijMuUI2dSwiDM5RiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Watch Shop QueTiempo</title>
+</head>
+
+<body>
+    <nav>
+        <img id="logo-img" src="./img/Clock logo.png" alt="Watch Shop QueTiempo Logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="cartbasket">
+
+            <span>Warenkorb:<i class="fas fa-shopping-cart"></i></span>
+
+            <ul id="liste">
+            </ul>
+
+            <span>Gesamtsumme:</span>
+            <span id="sum">0</span><span class="wert1">€</span><span> <i class="fas fa-shopping-bag"></i></span>
+
+        </section>
+
+
+        <section>
+            <div class="card">
+                <img class="zoom" id="zoom" onmouseover="zoomIn()" onmouseout="zoomOut()"
+                    src="img/bruno-van-der-kraan-VRERJ5Mjp4c-unsplash.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>Bruno Van</b></h4>
+                    <p>Style Watch</p>
+                    <p>Preis: <span id="price1">250</span> <span>€</span></p>
+                    <button id="uhr1" onclick="uhr1()">Bay Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="zoom" id="zoom1" onmouseover="zoomIn1()" onmouseout="zoomOut1()"
+                    src="img/daniel-korpai-hbTKIbuMmBI-unsplash.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>Apple</b></h4>
+                    <p>Smart Watch</p>
+                    <p>Preis: <span id="price2">450</span> <span id="wert1">€</span></p>
+                    <button id="uhr1" onclick="uhr2()">Bay Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="zoom" id="zoom2" onmouseover="zoomIn2()" onmouseout="zoomOut2()" src="./img/mamba.jpg"
+                    alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>MAMBA</b></h4>
+                    <p>Style Watch</p>
+                    <p>Preis: <span id="price3">299</span> <span>€</span></p>
+                    <button id="uhr1" onclick="uhr3()">Bay Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="zoom" id="zoom3" onmouseover="zoomIn3()" onmouseout="zoomOut3()" src="img/mambawatches.jpg"
+                    alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>MAMBA</b></h4>
+                    <p>Style Watch</p>
+                    <p>Preis: <span id="price4">199</span> <span>€</span></p>
+                    <button id="uhr1" onclick="uhr4()">Bay Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="zoom" id="zoom4" onmouseover="zoomIn4()" onmouseout="zoomOut4()"
+                    src="img/pat-taylor-12V36G17IbQ-unsplash.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>MAMBA</b></h4>
+                    <p>Style Watch</p>
+                    <p>Preis: <span id="price5">210</span> <span>€</span></p>
+                    <button id="uhr1" onclick="uhr5()">Bay Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="zoom" id="zoom5" onmouseover="zoomIn5()" onmouseout="zoomOut5()" src="img/nixcon.jpg"
+                    alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>NIXON</b></h4>
+                    <p>Style Watch</p>
+                    <p>Preis: <span id="price6">250</span> <span>€</span></p>
+                    <button id="uhr1" onclick="uhr6()">Bay Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="zoom" id="zoom6" onmouseover="zoomIn6()" onmouseout="zoomOut6()"
+                    src="img/shreesha-bhat-lz6z9GZu8hk-unsplash.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>FOSSIL</b></h4>
+                    <p>Style Watch</p>
+                    <p>Preis: <span id="price7">350</span> <span>€</span></p>
+                    <button id="uhr1" onclick="uhr7()">Bay Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="zoom" id="zoom7" onmouseover="zoomIn7()" onmouseout="zoomOut7()" src="img/paul-cuoco.jpg"
+                    style="width:100%">
+                <div class="container">
+                    <h4><b>SEIKO</b></h4>
+                    <p>Style Watch</p>
+                    <p>Preis: <span id="price8">199</span><span>€</span></p>
+                    <button id="uhr1" onclick="uhr8()">Bay Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="zoom" id="zoom8" onmouseover="zoomIn8()" onmouseout="zoomOut8()" src="img/yearone.jpg"
+                    alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>TIMEX EXPEDITION</b></h4>
+                    <p>Style Watch</p>
+                    <p>Preis: <span id="price9">439</span> <span>€</span></p>
+                    <button id="uhr1" onclick="uhr9()">Bay Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="zoom" id="zoom9" onmouseover="zoomIn9()" onmouseout="zoomOut9()"
+                    src="img/shreesha-bhat-lz6z9GZu8hk-unsplash.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>Bruno Van</b></h4>
+                    <p>Style Watch</p>
+                    <p>Preis: <span id="price10">329</span> <span>€</span></p>
+                    <button id="uhr1" onclick="uhr10()">Bay Now</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>Copyright &copy; 2021 Watch Shop QueTiempo GmbH</footer>
+
+    <script src="medium-zoom.min.js"></script>
+    <script src="scrypt.js"></script>
+</body>
+
+</html>
