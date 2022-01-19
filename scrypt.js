@@ -1,14 +1,13 @@
-// mediumZoom('.zoom', {
-//     margin: 50
-// })
-
-// mediumZoom(".zoom-dark", {
-//   background: '#000'
-// })
+mediumZoom('.zoom', {
+    margin: 50
+})
+mediumZoom(".zoom-dark", {
+  background: '#000'
+})
 
 
 // Zoom In Zoom Out function
-
+/*
 function zoomIn() {
   document.getElementById("zoom").style.width = "200px";
   document.getElementById("zoom").style.height = "auto";
@@ -108,6 +107,7 @@ function zoomOut9() {
   document.getElementById("zoom9").style.width = "100px";
   document.getElementById("zoom9").style.height = "auto";
 }
+*/
 
 // Warenkorb function
 
