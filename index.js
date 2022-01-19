@@ -71,3 +71,37 @@ function uhr10() {
 function uhre10() {
   document.getElementById("uhrJ").src = "img/10.jpg";
 }
+
+
+
+
+function kaufen(produktName, preis) {
+  document.getElementById("warenkorb").style.display = "block";
+
+  document.getElementById("list").innerHTML =
+    document.getElementById("list").innerHTML +
+    "<tr><td>" +
+    produktName +
+    "</td><td>" +
+    preis +
+    " €</td></tr>";
+
+
+  let letzteSumme = document.getElementById("gesamtbetrag").innerHTML;
+  letzteSumme = letzteSumme.replace(" €", "");
+  letzteSumme = Number(letzteSumme);
+  document.getElementById("gesamtbetrag").innerHTML = letzteSumme + preis + " €";
+}
+function switchCurrency() {
+  let preisElemente = document.getElementsByClassName("preis");
+  let preise = [];
+
+  for (let i = 0; i < preisElemente.length; i++) {
+    let preisText = preisElemente[i].innerHTML;
+    let preisZahl = zahlVonText(preisText);
+    preise.push(preisZahl);
+  }
+};
+
+
+

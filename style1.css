@@ -1,29 +1,118 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .logo {
   width: 60px;
   height: 60px;
   margin-left: 40px;
+
 }
+
+#warenkorb {
+  grid-area: warenkorb;
+  display: none;
+  align-self: start;
+  position: sticky;
+  top: 0;
+  padding: 1rem 1rem 0 0;
+  color: rgb(44, 69, 107);
+}
+
+h2 {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 1rem
+}
+
+thead {
+  border-bottom: 1px solid rgb(209, 201, 201);
+}
+
+th {
+  padding: 0.5rem;
+}
+
+th:first-of-type {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+td {
+  padding: 0.5rem;
+  text-align: right
+}
+
+;
+
+
+tfoot {
+  border-top: 1px solid #ccc;
+  font-weight: bold;
+}
+
 
 body {
-  background-color: #faf6ec;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+  -ms-grid-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header header""produkte warenkorb""footer footer";
 }
 
+@media (max-width: 640px) {
+  body {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header""produkte""warenkorb""footer";
+  }
+}
+
+
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 50px;
+  grid-area: produkte;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  main {
+    -ms-grid-columns: (1fr)2;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    -ms-grid-columns: (1fr)3;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1600px) {
+  main {
+    -ms-grid-columns: (1fr)4;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .card {
@@ -31,28 +120,10 @@ main {
   background-color: rgba(229, 231, 236, 0.856);
 }
 
-h1::before {
-  content: "* * *";
-  color: gold;
-  font-size: 3rem;
-}
-
-h1::after {
-  content: "* * *";
-  color: gold;
-  font-size: 3rem;
-}
-
-h1 {
-  color: gold;
-  justify-items: center;
-  font-family: 'Libre Baskerville', serif;
-  text-shadow: 6px 6px 8px orangered;
-}
-
 .card-title {
   font-family: 'Libre Baskerville', serif;
-  text-shadow: 4px 4px 6px #464343;
+  text-shadow: 4px 4px 6px rgb(70, 67, 67);
+
 }
 
 .card-text {
@@ -65,15 +136,16 @@ a:hover {
 }
 
 a {
-  -webkit-box-shadow: #a3bdf7 5px 5px 5px;
-          box-shadow: #a3bdf7 5px 5px 5px;
+  box-shadow: rgb(163, 189, 247) 5px 5px 5px;
 }
 
-@media (max-width: 640px) {
-  body {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-        grid-template-areas: "header" "main" "footer";
-  }
+
+footer {
+  grid-area: footer;
+  background-color: rgb(120, 152, 155);
+  color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/*# sourceMappingURL=style1.css.map */
